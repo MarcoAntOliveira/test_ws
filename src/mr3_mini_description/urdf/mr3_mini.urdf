@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+
+<!-- Robot description for the MR-3 Mini palletizing robot -->
+<robot name="mr3_mini">
+
+    <!-- Materials -->
+    <material name="black">
+        <color rgba="0.2 0.2 0.2 1"/>
+    </material>
+
+    <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+
+    <material name="red">
+        <color rgba="1 0 0 1"/>
+    </material>
+
+    <material name="green">
+        <color rgba="0 1 0 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
+
+    <!-- Links -->
+    <link name="base">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/base.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+    </link>
+
+    <link name="link_1">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <link name="motor_1">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/motor_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>               
+        </visual>
+    </link>
+
+    <link name="motor_2">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/motor_2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>                
+        </visual>
+    </link>
+
+    <link name="motor_3">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/motor_3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>               
+        </visual>
+    </link>
+
+    <link name="link_2">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="white"/>             
+        </visual>
+    </link>
+
+    <link name="link_3">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/link_3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="white"/>               
+        </visual>
+    </link>
+
+    <link name="motor_3_linkage">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/motor_3_linkage.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>                
+        </visual>
+    </link>
+
+    <link name="joint_3_linkage">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/joint_3_linkage.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>                
+        </visual>
+    </link>
+
+    <link name="vertical_linkage">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/vertical_linkage.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>                
+        </visual>
+    </link>
+
+    <link name="triangular_linkage">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/triangular_linkage.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>               
+        </visual>
+    </link>
+
+    <link name="aux_horizontal_linkage"/>
+
+    <link name="horizontal_linkage">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/horizontal_linkage.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>               
+        </visual>
+    </link>
+
+    <link name="aux_link_4"/>
+
+    <link name="link_4">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/link_4.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="white"/>               
+        </visual>
+    </link>
+
+    <link name="logo">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/logo.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>              
+        </visual>
+    </link>
+
+    <link name="motor_4">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/motor_4.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>               
+        </visual>
+    </link>
+
+    <link name="link_5"/>
+
+    <link name="flange">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/flange.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>               
+        </visual>
+    </link>
+
+    <!-- Tool Center Point visualization -->
+    <link name="tool_base">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/tool_base.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="black"/>               
+        </visual>
+    </link>
+
+    <link name="x_axis">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/x_axis.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="red"/>               
+        </visual>
+    </link>
+
+    <link name="y_axis">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/y_axis.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="green"/>               
+        </visual>
+    </link>
+
+    <link name="z_axis">
+        <visual>
+            <geometry>
+                <mesh filename="package://mr3_mini_description/meshes/z_axis.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>                
+        </visual>
+    </link>
+
+    <link name="link_1">
+    <visual>
+        <geometry>
+            <mesh filename="package://mr3_mini_description/meshes/link_1.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="white"/>
+    </visual>
+    <collision>
+        <geometry>
+            <mesh filename="package://mr3_mini_description/meshes/link_1.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+    </collision>
+    </link>
+
+    <link name="world"/>
+    <joint name="virtual_joint" type="fixed">
+        <parent link="world"/>
+        <child link="base"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Joints -->
+    <joint name="joint_1" type="revolute">
+        <parent link="base"/>
+        <child link="link_1"/>
+        <origin xyz="0 0 0.1556" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.1416" upper="3.1416" effort="1" velocity="1"/>
+    </joint>
+
+    <joint name="link_1_to_motor_1" type="fixed">
+        <parent link="link_1"/>
+        <child link="motor_1"/>
+        <origin xyz="-0.0615 0 -0.054" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="link_1_to_motor_2" type="fixed">
+        <parent link="link_1"/>
+        <child link="motor_2"/>
+        <origin xyz="-0.002 0.043 -0.022" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="link_1_to_motor_3" type="fixed">
+        <parent link="link_1"/>
+        <child link="motor_3"/>
+        <origin xyz="-0.002 -0.043 -0.022" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="joint_2" type="revolute">
+        <parent link="link_1"/>
+        <child link="link_2"/>
+        <origin xyz="0.040 0 0" rpy="-1.5708 -1.5708 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.6981" upper="1.4835" effort="1" velocity="1"/>
+    </joint>
+
+    <joint name="joint_3" type="revolute">
+        <parent link="link_2"/>
+        <child link="link_3"/>
+        <origin xyz="0.150 0 0" rpy="0 0 1.5708"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.8727" upper="0.7854" effort="1" velocity="1"/>
+    </joint>
+
+    <joint name="motor_3_linkage_joint" type="revolute">
+        <parent link="link_2"/>
+        <child link="motor_3_linkage"/>
+        <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.8727" upper="0.7854" effort="1" velocity="1"/>
+        <mimic joint="joint_3" multiplier="1.0" offset="0"/>
+    </joint>
+
+    <joint name="joint_3_linkage_joint" type="revolute">
+        <parent link="motor_3_linkage"/>
+        <child link="joint_3_linkage"/>
+        <origin xyz="0.055 0 0" rpy="0 0 1.5708"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.8727" upper="0.7854" effort="1" velocity="1"/>
+        <mimic joint="joint_3" multiplier="-1.0" offset="0"/>
+    </joint>
+
+    <joint name="vertical_linkage_joint" type="revolute">
+        <parent link="link_1"/>
+        <child link="vertical_linkage"/>
+        <origin xyz="-0.014064 0.0485000 0.0378560" rpy="-1.5708 -1.5708 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.6981" upper="1.4835" effort="1" velocity="1"/>
+        <mimic joint="joint_2" multiplier="1.0" offset="0"/>
+    </joint>
+
+    <joint name="triangular_linkage_joint" type="revolute">
+        <parent link="vertical_linkage"/>
+        <child link="triangular_linkage"/>
+        <origin xyz="0.150 0 -0.0114" rpy="0 0 1.5708"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.6981" upper="1.4835" effort="1" velocity="1"/>
+        <mimic joint="joint_2" multiplier="-1.0" offset="0"/>
+    </joint>
+
+    <joint name="horizontal_linkage_aux_joint" type="revolute">
+        <parent link="triangular_linkage"/>
+        <child link="aux_horizontal_linkage"/>
+        <origin xyz="0.1081281 0 0.0114" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.6981" upper="1.4835" effort="1" velocity="1"/>
+        <mimic joint="joint_2" multiplier="1.0" offset="0"/>
+    </joint>
+
+    <joint name="horizontal_linkage_joint" type="revolute">
+        <parent link="aux_horizontal_linkage"/>
+        <child link="horizontal_linkage"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.8727" upper="0.7854" effort="1" velocity="1"/>
+        <mimic joint="joint_3" multiplier="1.0" offset="0"/>
+    </joint>
+
+    <joint name="link_4_aux_joint" type="revolute">
+        <parent link="link_3"/>
+        <child link="aux_link_4"/>
+        <origin xyz="0.160 0 0" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.6981" upper="1.4835" effort="1" velocity="1"/>
+        <mimic joint="joint_2" multiplier="-1.0" offset="0"/>
+    </joint>
+
+    <joint name="link_4_joint" type="revolute">
+        <parent link="aux_link_4"/>
+        <child link="link_4"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-0.8727" upper="0.7854" effort="1" velocity="1"/>
+        <mimic joint="joint_3" multiplier="-1.0" offset="0"/>
+    </joint>
+
+    <joint name="link_4_to_logo" type="fixed">
+        <parent link="link_4"/>
+        <child link="logo"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="link_4_to_motor_4" type="fixed">
+        <parent link="link_4"/>
+        <child link="motor_4"/>
+        <origin xyz="0.050 0.014 0" rpy="1.5708 0 0"/>
+    </joint>
+
+    <joint name="joint_4" type="revolute">
+        <parent link="link_4"/>
+        <child link="link_5"/>
+        <origin xyz="0.050 0 0" rpy="1.5708 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.1416" upper="3.1416" effort="1" velocity="1"/>
+    </joint>
+
+    <joint name="link_5_to_flange" type="fixed">
+        <parent link="link_5"/>
+        <child link="flange"/>
+        <origin xyz="0 0 -0.0396" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="flange_to_tool_base" type="fixed">
+        <parent link="flange"/>
+        <child link="tool_base"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="tool_base_to_x_axis" type="fixed">
+        <parent link="tool_base"/>
+        <child link="x_axis"/>
+        <origin xyz="0.0085 0 -0.026" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="tool_base_to_y_axis" type="fixed">
+        <parent link="tool_base"/>
+        <child link="y_axis"/>
+        <origin xyz="0 0.0085 -0.026" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="tool_base_to_z_axis" type="fixed">
+        <parent link="tool_base"/>
+        <child link="z_axis"/>
+        <origin xyz="0 0 -0.0345" rpy="0 0 0"/>
+    </joint>
+
+</robot>
